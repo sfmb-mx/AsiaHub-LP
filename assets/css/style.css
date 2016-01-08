@@ -54,16 +54,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px;
 }
 h1 {
-    font-family: 'Lobster', cursive;
-    text-transform: capitalize;
-    color: #ffd57a;
-    margin-bottom: 65px;
+    font-family: 'Roboto Slab', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* text-transform: capitalize; */
+    color: #fff;
+    margin-bottom: 10px;
 }
 h2 {
     font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    color: #FFFFFF;
-    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFF;
 }
 h3 {
     font-family: 'Roboto Slab', serif;
@@ -80,15 +81,14 @@ h4 {
     color: #1451A1;
 }
 
-h1 { font-size: 45px;}
-h2 { font-size: 36px;}
+h1 { font-size: 40px;}
+h2 { font-size: 30px;}
 h3 { font-size: 20px;}
 h4 { font-size: 18px;}
 h5 { font-size: 16px;}
 h6 { font-size: 14px;}
 
 p {
-
     font-weight: normal;
 }
 
@@ -146,10 +146,6 @@ a:active {color: #416467;}
 .rocket-block .img-thumbnail {
     background:#fff;
 }
-
-
-
-
 
 /*--------------------------------------
    # 3.0  Right-block style start here
@@ -310,7 +306,7 @@ a:active {color: #416467;}
 }
 .sun h1 {
     font-size: 36px;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
 }
 .sun h2 {
     margin-bottom:70px
@@ -405,4 +401,12 @@ nav section {
     background: #FFFFFF;
     margin-bottom: 10px;
     padding-bottom: 10px;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad-20 {
+    padding: 20px;
 }
