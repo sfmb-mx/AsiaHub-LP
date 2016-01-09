@@ -312,10 +312,10 @@ a:active {color: #416467;}
 }
 .sun h1 {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .sun h2 {
-    margin-bottom:70px
+    margin-bottom:40px
 }
 .sun .timing {
     margin-top:0;
