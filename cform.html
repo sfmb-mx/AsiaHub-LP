@@ -41,7 +41,7 @@
                         </div>
                     </form>
 
-                    <p id="demo"></p>
+                    <p id="myuri"></p>
                 </section>
 
                 <section class="col-lg-6 text-center">
@@ -54,9 +54,8 @@
 
         <script>
          function myFunction() {
-             var x = document.URL;
-             var uri_dec = decodeURIComponent(x);
-             document.getElementById("demo").innerHTML = uri_dec;
+             var x = decodeURIComponent(document.URL);
+             document.getElementById("myuri").innerHTML = x;
          }
         </script>
 
