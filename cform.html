@@ -55,7 +55,10 @@
         <script>
          function myFunction() {
              var x = decodeURIComponent(document.URL);
-             document.getElementById("myuri").innerHTML = x;
+
+             var xsplit = x.split("");
+
+             document.getElementById("myuri").innerHTML = xsplit;
          }
         </script>
 
