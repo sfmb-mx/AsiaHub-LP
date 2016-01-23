@@ -19,7 +19,7 @@
         <link href="css/site.css" rel="stylesheet">
     </head>
 
-    <body onload="myFunction()">
+    <body onload="URLParser()">
         <div id="main-container" class="container theme-showcase" role="main">
 
             <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -53,23 +53,7 @@
 
         </div>
 
-        <script>
-         function myFunction() {
-             var x = decodeURIComponent(document.URL);
-             var xsplit = x.split("");
-
-             var newPathname = "";
-             for (i = 37; i < xsplit.length; i++) {
-                 newPathname += xsplit[i];
-             }
-
-             document.getElementById("myuri").innerHTML = newPathname;
-
-             var urlTextBox = document.getElementById("myUrl");
-             urlTextBox.value = urlTextBox.value + newPathname;
-
-         }
-        </script>
+        <script src="js/custom.js"></script>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
