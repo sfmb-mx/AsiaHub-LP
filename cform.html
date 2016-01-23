@@ -55,10 +55,15 @@
         <script>
          function myFunction() {
              var x = decodeURIComponent(document.URL);
-
              var xsplit = x.split("");
 
-             document.getElementById("myuri").innerHTML = xsplit[37];
+             var newPathname = "";
+             for (i = 0; i < pathArray.length; i++) {
+                 newPathname += "/";
+                 newPathname += xsplit[i];
+             }
+
+             document.getElementById("myuri").innerHTML = newPathname;
          }
         </script>
 
