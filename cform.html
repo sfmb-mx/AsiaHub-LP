@@ -40,15 +40,24 @@
                             <input type="text" class="form-control" id="mail">
                         </div>
                     </form>
+
+                    <p id="demo"></p>
                 </section>
 
                 <section class="col-lg-6 text-center">
-                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary" onclick="myFunction()">Send request</button>
                 </section>
 
             </div>
 
         </div>
+
+        <script>
+         function myFunction() {
+             var x = document.URL;
+             document.getElementById("demo").innerHTML = x;
+         }
+        </script>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
