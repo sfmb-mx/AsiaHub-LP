@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
     <head>
-        <title>AsiaHub | Quotation services</title>
+        <title>Quotation services | AsiaHub</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="AsiaHub customer services">
+        <meta name="description" content="AsiaHub customer services form">
         <meta name="author" content="Bizland.biz">
 
 
@@ -24,17 +24,26 @@
 
             <!-- Main jumbotron for a primary marketing message or call to action -->
             <div class="jumbotron">
-                <h1>Bookmarklet example</h1>
+                <h1>Test form</h1>
                 <p>Testing AsiaHub behavior.</p>
             </div>
 
             <div class="col-lg-12">
                 <section class="col-lg-6">
-                    Drag and drop this button to your Bookmarks.
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="myUrl">URL:</label>
+                            <input type="text" class="form-control" id="myUrl">
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">Email:</label>
+                            <input type="text" class="form-control" id="mail">
+                        </div>
+                    </form>
                 </section>
 
-                <section class="col-lg-6">
-                    <a class="circled" data-redirect="false" data-type="track" data-name="Internal Link" data-properties="{&quot;destination&quot;: &quot;Drag to Bookmark Bar&quot;}" href="javascript:void(function(d,sc,e){var%20r='http://asiahub.hk/cform.html?cur='+e(d.location.href)+'&activeIndex=1&tracelog=bookmark';setTimeout(function(){if(!window.open(r,'_blank'))location.href=r;},0);})(document,screen,encodeURIComponent);">Bookmarklet test</a>
+                <section class="col-lg-6 text-center">
+                    <button type="button" class="btn btn-primary">Primary</button>
                 </section>
 
             </div>
