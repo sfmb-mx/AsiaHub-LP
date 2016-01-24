@@ -8,7 +8,7 @@ function URLParser() {
             newPathname += xsplit[i];
         }
 
-        var urlTextBox = document.getElementById("myUrl");
+        var urlTextBox = document.getElementById("msg");
         urlTextBox.value = urlTextBox.value + newPathname;
     } else {
         document.getElementById("myuri").innerHTML = "Please enter a URL";
