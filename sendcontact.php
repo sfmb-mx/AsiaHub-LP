@@ -2,7 +2,7 @@
 
 // Define some constants
 define( "RECIPIENT_NAME", "AsiaHub Customer Service" ); //UPDATE THIS TO YOUR NAME
-define( "RECIPIENT_EMAIL", "smendoza.barrera@gmail.com" ); //UPDATE THIS TO YOUR EMAIL ID
+define( "RECIPIENT_EMAIL", "contato@caring.com.br" ); //UPDATE THIS TO YOUR EMAIL ID
 define( "EMAIL_SUBJECT", "Website Visitor Request" ); //UPDATE THIS TO YOUR SUBJECT
 
 // Read the form values
