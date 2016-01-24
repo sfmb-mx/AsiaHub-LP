@@ -49,8 +49,39 @@
                     <button type="button" class="btn btn-primary">Send request</button>
                 </section>
 
-            </div>
+                <div id="contact-form-wrap" class="container contact-form-wrap">
+                    <div class="row">
+                        <article class="col-md-8 col-md-offset-2 main-caps text-center">
+                            <div class="contact-item pad-common ">
+                                <div class="alert alert-error error " id="fname">
+                                    <p>Name must not be empty</p>
+                                </div>
+                                <div class="alert alert-error  error" id="fmail">
+                                    <p>Please provide a valid email</p>
+                                </div>
+                                <div class="alert alert-error  error" id="fmsg">
+                                    <p>Message should not be empty</p>
+                                </div>
+                                <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post">
+                                    <article>
+                                        <input type="text" placeholder="Your Name" id="name" name="name" size="100" class="border-form">
+                                    </article>
+                                    <article>
+                                        <input type="text" placeholder="Valid email ID" name="email" id="email" size="30" class="border-form">
+                                    </article>
+                                    <article>
+                                        <textarea placeholder="Your Message" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
+                                        <div class="btn-wrap  text-center">
+                                            <button class="btn btn-trinity btn-trinity-white" id="submit" name="submit" type="submit">Send Message</button>
+                                        </div>
+                                    </article>
+                                </form>
+                            </div>
+                        </article>
+                    </div>
+                </div>
 
+            </div>
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -59,6 +90,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+        <script src="js/form-validation.js" ></script>
         <script src="js/custom.js"></script>
 
     </body>
