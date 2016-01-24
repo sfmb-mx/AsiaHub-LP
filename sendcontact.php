@@ -1,9 +1,9 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "John Doe" ); //UPDATE THIS TO YOUR NAME
-define( "RECIPIENT_EMAIL", "john@example.com" ); //UPDATE THIS TO YOUR EMAIL ID
-define( "EMAIL_SUBJECT", "Website Visitor Message" ); //UPDATE THIS TO YOUR SUBJECT
+define( "RECIPIENT_NAME", "AsiaHub Customer Service" ); //UPDATE THIS TO YOUR NAME
+define( "RECIPIENT_EMAIL", "smendoza.barrera@gmail.com" ); //UPDATE THIS TO YOUR EMAIL ID
+define( "EMAIL_SUBJECT", "Website Visitor Request" ); //UPDATE THIS TO YOUR SUBJECT
 
 // Read the form values
 $success = false;
@@ -14,25 +14,23 @@ $message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>Message: '.$or
 
 // If all values exist, send the email
 if ( $senderName && $senderEmail && $message ) {
-  $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $senderName . " <" . $senderEmail . ">\n";
-  $headers .= "MIME-Version: 1.0\n"; 
-  $headers .= "Content-Type: text/HTML; charset=ISO-8859-1\n";
-  $success = mail( $recipient, EMAIL_SUBJECT, $message, $headers );
+    $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
+    $headers = "From: " . $senderName . " <" . $senderEmail . ">\n";
+    $headers .= "MIME-Version: 1.0\n";
+    $headers .= "Content-Type: text/HTML; charset=ISO-8859-1\n";
+    $success = mail( $recipient, EMAIL_SUBJECT, $message, $headers );
 }
 
 if ( $success )
 {
 ?>
-	<script>
-		window.location='thanks.html';
-	</script>
+    <script>
+     window.location='cform.html';
+    </script>
 <?php
 }
 else
 {
-	echo "<h1>There was a problem sending your message. Please try again.</h1>";
+    echo "<h1>There was a problem sending your message. Please try again.</h1>";
 }
 ?>
-
-
