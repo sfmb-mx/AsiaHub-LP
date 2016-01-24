@@ -3,14 +3,16 @@
 // Define some constants
 define( "RECIPIENT_NAME", "Hello AsiaHub" ); //UPDATE THIS TO YOUR NAME
 define( "RECIPIENT_EMAIL", "smendoza.barrera@gmail.com" ); //UPDATE THIS TO YOUR EMAIL ID
-define( "EMAIL_SUBJECT", "Website Visitor Message" ); //UPDATE THIS TO YOUR SUBJECT
+define( "EMAIL_SUBJECT", "Website Visitor Request" ); //UPDATE THIS TO YOUR SUBJECT
 
 // Read the form values
 $success = false;
 $senderName = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name'] ) : "";
 $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
-$original_message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
-$message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>Message: '.$original_message;
+/* $original_message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : ""; */
+/* $message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>Message: '.$original_message; */
+
+$message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail;
 
 // If all values exist, send the email
 if ( $senderName && $senderEmail && $message ) {
@@ -25,7 +27,7 @@ if ( $success )
 {
 ?>
     <script>
-     window.location='thanks.html';
+     window.location='cform.html';
     </script>
 <?php
 }

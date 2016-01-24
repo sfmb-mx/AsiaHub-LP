@@ -70,7 +70,7 @@
                                         <input type="text" placeholder="Valid email ID" name="email" id="email" size="30" class="border-form">
                                     </article>
                                     <article>
-                                        <!-- <textarea placeholder="Your Message" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea> -->
+                                        <textarea placeholder="Your Message" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
                                         <div class="btn-wrap  text-center">
                                             <button class="btn btn-trinity btn-trinity-white" id="submit" name="submit" type="submit">Send Message</button>
                                         </div>
