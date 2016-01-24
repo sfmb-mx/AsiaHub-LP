@@ -10,7 +10,7 @@ $success = false;
 $senderName = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name'] ) : "";
 $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
 $original_message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
-$message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>Message: '.$original_message;
+$message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>URL: '.$original_message;
 
 // If all values exist, send the email
 if ( $senderName && $senderEmail && $message ) {

@@ -17,7 +17,7 @@ User-agent: *
 Crawl-delay: 10
 # Directories
 Disallow: /js
-Disallow: /php
+Disallow: /Mail
 Disallow: /fonts
 Disallow: /css
 Disallow: /.git
