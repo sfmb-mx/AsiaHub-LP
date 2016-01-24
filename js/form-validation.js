@@ -14,12 +14,12 @@ $(document).ready(function($) {
 
         //required:
 
-        //name
-        var name = $("input#name").val();
-        if(name == ""){
+        //url
+        var url = $("input#url").val();
+        if(url == ""){
             //$("#error").fadeIn().text("Name required.");
-            $('#fname').fadeIn('slow');
-            $("input#name").focus();
+            $('#furl').fadeIn('slow');
+            $("input#url").focus();
             return false;
         }
 
@@ -52,14 +52,14 @@ $(document).ready(function($) {
 
 
         // comments
-        var comments = $("#msg").val();
+        // var comments = $("#msg").val();
 
-        if(comments == ""){
-            //$("#error").fadeIn().text("Email required");
-            $('#fmsg').fadeIn('slow');
-            $("input#msg").focus();
-            return false;
-        }
+        // if(comments == ""){
+        //     //$("#error").fadeIn().text("Email required");
+        //     $('#fmsg').fadeIn('slow');
+        //     $("input#msg").focus();
+        //     return false;
+        // }
     });
 
 
