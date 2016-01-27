@@ -12,8 +12,8 @@ $senderName = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "
 $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
 $original_message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
 $original_message2 = isset( $_POST['message2'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message2'] ) : "";
-$message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>URL: '.$original_message'<br/>Details: '.$original_message2;
-
+/* $message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>URL: '.$original_message; */
+$message = 'Name: '.$senderName.'<br/>Email: '.$senderEmail.'<br/>URL: '.$original_message.'<br/>Request datails: '.$original_message2;
 // If all values exist, send the email
 if ( $senderName && $senderEmail && $message ) {
     $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
