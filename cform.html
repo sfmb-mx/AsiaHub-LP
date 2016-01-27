@@ -45,14 +45,18 @@
                                 </div>
                                 <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post">
                                     <section  class="form-group">
-                                        <input type="text" placeholder="Your Name" id="name" name="name" class="form-control">
-                                    </section>
-                                    <section  class="form-group">
                                         <input type="text" placeholder="Valid email ID" name="email" id="email" class="form-control">
                                     </section>
+
                                     <section  class="form-group">
                                         <textarea readonly placeholder="Your product URL" name="message" rows="3" id="msg" class="form-control"></textarea>
                                     </section>
+
+                                    <section  class="form-group">
+                                        <textarea placeholder="Your comments" name="message" rows="3" id="name" name="name" class="form-control"></textarea>
+                                        <!-- <input type="text" placeholder="Your Name" id="name" name="name" class="form-control"> -->
+                                    </section>
+
                                     <section class="btn-wrap text-center">
                                         <button class="btn btn-primary" id="submit" name="submit" type="submit">Send Request</button>
                                     </section>
