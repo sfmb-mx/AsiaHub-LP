@@ -27,7 +27,7 @@ if ( $success )
 {
 ?>
     <script>
-     window.location='cform.html';
+     window.location='thanks.html';
     </script>
 <?php
 }

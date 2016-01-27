@@ -1,0 +1,15 @@
+.jumbotron-2 {
+    padding-top: 7rem;
+    margin-bottom: 0;
+    background: #663fb5 url(../img/bg-header-3.jpg) no-repeat center bottom;
+    background-size: cover;
+    border-radius:0
+}
+
+.jumbotron-3 {
+    padding-top: 7rem;
+    margin-bottom: 0;
+    background: #663fb5 url(../img/bg-header-2.jpg) no-repeat center bottom;
+    background-size: cover;
+    border-radius:0
+}

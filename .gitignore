@@ -31,6 +31,11 @@ _site
 nbproject
 Thumbs.db
 
+.codekit-cache
+.sass-cache
+config.codekit
+TODO
+
 # Komodo
 .komodotools
 *.komodoproject
