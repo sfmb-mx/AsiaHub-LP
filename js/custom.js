@@ -15,5 +15,5 @@ function URLParser() {
     }
 
     var nameTextBox = document.getElementById("name");
-    nameTextBox.value = nameTextBox.value + "Our best customer";
+    nameTextBox.value = nameTextBox.value + "You are our best customer";
 }
