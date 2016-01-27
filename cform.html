@@ -41,18 +41,25 @@
                                     <p>Please provide a valid email</p>
                                 </div>
                                 <div class="alert alert-error  error" id="fmsg">
-                                    <p>URL should not be empty</p>
+                                    <p>URL and comment fields should not be empty</p>
                                 </div>
                                 <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post">
                                     <section  class="form-group">
                                         <input readonly type="hidden" placeholder="Filled using the bookmarklet" id="name" name="name" class="form-control">
                                     </section>
+
                                     <section  class="form-group">
                                         <input type="text" placeholder="Valid email ID" name="email" id="email" class="form-control">
                                     </section>
+
                                     <section  class="form-group">
                                         <textarea readonly placeholder="http://" name="message" rows="3" id="msg" class="form-control"></textarea>
                                     </section>
+
+                                    <section  class="form-group">
+                                        <textarea placeholder="Detail your request please" name="message2" rows="3" id="msg2" class="form-control"></textarea>
+                                    </section>
+
                                     <section class="btn-wrap text-center">
                                         <button class="btn btn-primary" id="submit" name="submit" type="submit">Send Request</button>
                                     </section>

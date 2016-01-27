@@ -57,7 +57,19 @@ $(document).ready(function($) {
             $("input#msg").focus();
             return false;
         }
+
+        var comments2 = $("#msg2").val();
+
+        if(comments2 == ""){
+            //$("#error").fadeIn().text("Email required");
+            $('#fmsg').fadeIn('slow');
+            $("input#msg2").focus();
+            return false;
+        }
+
     });
+
+
 
 
     // on success...
