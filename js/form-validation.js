@@ -48,9 +48,6 @@ $(document).ready(function($) {
             return pattern.test(emailAddress);
         };
 
-
-
-
         // comments
         var comments = $("#msg").val();
 

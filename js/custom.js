@@ -13,4 +13,7 @@ function URLParser() {
     } else {
         document.getElementById("myuri").innerHTML = "Please enter a URL";
     }
+
+    var nameTextBox = document.getElementById("name");
+    nameTextBox.value = nameTextBox.value + "Our best customer"
 }
