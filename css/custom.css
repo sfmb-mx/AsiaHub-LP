@@ -13,3 +13,11 @@
     background-size: cover;
     border-radius:0
 }
+
+.white {
+    color: #FFFFFF;
+}
+
+.pad {
+    margin-top: 40px;
+}

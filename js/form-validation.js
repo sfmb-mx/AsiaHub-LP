@@ -14,12 +14,12 @@ $(document).ready(function($) {
 
         //required:
 
-        //name
-        var name = $("input#name").val();
+        // idstore
+        var name = $("input#idstore").val();
         if(name == ""){
-            //$("#error").fadeIn().text("Name required.");
+            //$("#error").fadeIn().text("Id store required.");
             $('#fname').fadeIn('slow');
-            $("input#name").focus();
+            $("input#idstore").focus();
             return false;
         }
 
@@ -51,26 +51,15 @@ $(document).ready(function($) {
         // comments
         var comments = $("#msg").val();
 
-        if(comments == ""){
+        if(comments == "") {
             //$("#error").fadeIn().text("Email required");
             $('#fmsg').fadeIn('slow');
             $("input#msg").focus();
             return false;
         }
-
-        var comments2 = $("#msg2").val();
-
-        if(comments2 == ""){
-            //$("#error").fadeIn().text("Email required");
-            $('#fmsg').fadeIn('slow');
-            $("input#msg2").focus();
-            return false;
-        }
+        console.log(name);
 
     });
-
-
-
 
     // on success...
     function success(){
